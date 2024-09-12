@@ -13,6 +13,7 @@ namespace WebApplication13
             // Add services to the container.
             builder.Services.AddControllersWithViews();
             builder.Services.AddDbContext<DbContext, TestContext>();
+            builder.Services.AddDataAccess();
 
             var app = builder.Build();
 
